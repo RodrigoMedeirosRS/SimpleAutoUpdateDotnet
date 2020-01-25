@@ -49,7 +49,7 @@ To update the application we copy everything in the work directory to the applic
 
 Finally, the application is spawned as a new Process, and the current process is closed.
 
-#Using the Code
+# Using the Code
 
 Add a reference to RedCell.Diagnostics.Update.dll to your project.
 
@@ -63,7 +63,7 @@ Create an XML manifest and place it both in your application's directory and on 
 
 You're done.
 
-#But what's going on?
+# But what's going on?
 
 I have included a simple facilty for debugging, or if you wish to add a user interface to let the user know what is happening.
 using RedCell.Diagnostics.Update;
@@ -82,13 +82,13 @@ Log.Prefix = "[Update] "; // This is the default.
 Log.Event += (sender, e) => GuiMessageBox.Show(e.Message);
 ```
 
-#Know issues at this time.
+# Know issues at this time.
 * Although the executable can be updated, any other open files can't.
 * Multi-Threading applications can't be updated.
 * Files aren't checked for integrity i.e. by comparing hashes.
 * Files aren't overwritten until they are successfully unpacked, but there still isn't a rollback or backup mechanism.
 * This isn't intended for applications that reside in Program Files. These directories are write-protected and writing requires UAC. More on that topic later.
 
-#Notes
+# Original Author
 
-This project is derivated from Yvan Rodrigues original RedCell updater.
+This project is derivated from work of Yvan Rodrigues.
