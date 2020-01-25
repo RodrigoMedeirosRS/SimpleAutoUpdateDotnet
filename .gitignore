@@ -246,3 +246,4 @@ RedCell.Diagnostics.Update/bin/Debug/netcoreapp3.1
 RedCell.Diagnostics.Update/obj
 RedCell.Demo/obj
 RedCell.Demo/bin/Debug/netcoreapp3.1
+.vscode
