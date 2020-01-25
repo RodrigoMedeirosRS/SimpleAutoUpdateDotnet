@@ -244,3 +244,5 @@ RedCell.Net/obj
 RedCell.Net/bin/Debug/netcoreapp3.1
 RedCell.Diagnostics.Update/bin/Debug/netcoreapp3.1
 RedCell.Diagnostics.Update/obj
+RedCell.Demo/obj
+RedCell.Demo/bin/Debug/netcoreapp3.1
