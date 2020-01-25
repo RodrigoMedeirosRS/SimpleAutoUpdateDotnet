@@ -1,9 +1,4 @@
 <h1>The Code Project Open License (CPOL) 1.02</h1>
-<br />
-
-<center>
-<div style="text-align: left; border: 2px solid #000000; width: 660; background-color: #FFFFD9; padding: 20px;">
-
 <h2>Preamble</h2>
 <p>
 	This License governs Your use of the Work. This License is intended to allow developers
