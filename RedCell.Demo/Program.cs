@@ -1,6 +1,6 @@
 ﻿﻿using System;
 
-namespace RedCell.Diagnostics.Update.Demo
+namespace RedCell.Demo
 {
     static class Program
     {
