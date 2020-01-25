@@ -90,4 +90,5 @@ Log.Event += (sender, e) => GuiMessageBox.Show(e.Message);
 * This isn't intended for applications that reside in Program Files. These directories are write-protected and writing requires UAC. More on that topic later.
 
 #Notes
+
 This project is derivated from Yvan Rodrigues original RedCell updater.
