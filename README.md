@@ -1,4 +1,4 @@
-# SimpleAutoUpdate for NetCore 3.1
+# Simple Auto Updater for NetCore 3.1
 * Check a remote site via HTTP for a newer version.
 * If a newer version is available, download it as a ZIP.
 * Ensure successful download before overwriting anything.
@@ -9,7 +9,7 @@
 * Accommodate some simple logging.
 * Single XML file configuration.
 * Work on multiplatforms (Linux and Windows).
-* Provide a simple, functional and reliable auto update system to NetCore 3 venrsios.
+* Provide a simple, functional and reliable Auto Updater for NetCore 3 versions.
 
 # How it Works
 <img src="https://github.com/RodrigoMedeirosRS/SimpleAutoUpdate/blob/master/Readme%20Resources/Update.png" />
