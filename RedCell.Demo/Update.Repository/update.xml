@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Manifest version="2">
   <CheckInterval>900</CheckInterval>
   <RemoteConfigUri>https://github.com/RodrigoMedeirosRS/SimpleAutoUpdate/blob/master/RedCell.Demo/Update.Repository/update.xml</RemoteConfigUri>
