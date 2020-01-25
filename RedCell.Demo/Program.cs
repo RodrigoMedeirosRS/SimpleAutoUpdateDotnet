@@ -1,4 +1,5 @@
 ﻿﻿using System;
+using System.Threading;
 using RedCell.Diagnostics.Update;
 
 namespace RedCell.Demo
@@ -11,9 +12,15 @@ namespace RedCell.Demo
         static void Main()
         {
             Log.Console = true;
-            Console.WriteLine("Hello World");
             var updater = new Updater();
             updater.StartMonitoring();
+            
+            Console.WriteLine("Hello World");
+            while(true)
+            {
+                Console.WriteLine("Live");
+                Thread.Sleep(3000);
+            }
         }
     }
 }
