@@ -22,7 +22,7 @@
 	making use of the Work licensed pursuant to this License and the individual or other
 	entity which offers the Work under the terms of this License ("Author").</p>
 
-	<h2>License</h2>
+<h2>License</h2>
 	<p>
 		THE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CODE PROJECT OPEN
 		LICENSE ("LICENSE"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE
@@ -37,7 +37,6 @@
 	
 <ol class="SpacedList">
 	<li><strong>Definitions.</strong>
-	
 		<ol class="SpacedList" style="list-style-type: lower-alpha;">
 			<li><strong>"Articles"</strong> means, collectively, all articles written by Author
 				which describes how the Source Code and Executable Files for the Work may be used
@@ -63,18 +62,15 @@
 			</li>
 		</ol>
 	</li>
-	
 	<li><strong>Fair Use/Fair Use Rights.</strong> Nothing in this License is intended to
 		reduce, limit, or restrict any rights arising from fair use, fair dealing, first
 		sale or other limitations on the exclusive rights of the copyright owner under copyright
 		law or other applicable laws.
 	</li>
-	
 	<li><strong>License Grant.</strong> Subject to the terms and conditions of this License,
 		the Author hereby grants You a worldwide, royalty-free, non-exclusive, perpetual
 		(for the duration of the applicable copyright) license to exercise the rights in
 		the Work as stated below:
-		
 		<ol class="SpacedList" style="list-style-type: lower-alpha;">
 			<li>You may use the standard version of the Source Code or Executable Files in Your
 				own applications. </li>
@@ -93,20 +89,16 @@
 				pursuant to this License but you may not repost or republish or otherwise distribute
 				or make available the Articles, without the prior written consent of the Author.</li>
 		</ol>
-	
 		Any subroutines or modules supplied by You and linked into the Source Code or Executable
 		Files of this Work shall not be considered part of this Work and will not be subject
 		to the terms of this License.
 	</li>
-	
 	<li><strong>Patent License.</strong> Subject to the terms and conditions of this License, 
 	each Author hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, 
 	irrevocable (except as stated in this section) patent license to make, have made, use, import, 
 	and otherwise transfer the Work.</li>
-	
 	<li><strong>Restrictions.</strong> The license granted in Section 3 above is expressly
 		made subject to and limited by the following restrictions:
-		
 		<ol class="SpacedList" style="list-style-type: lower-alpha;">
 			<li>You agree not to remove any of the original copyright, patent, trademark, and 
 				attribution notices and associated disclaimers that may appear in the Source Code 
@@ -137,7 +129,6 @@
 			</li>
 		</ol>
 	</li>
-	
 	<li><strong>Representations, Warranties and Disclaimer.</strong> THIS WORK IS PROVIDED
 		"AS IS", "WHERE IS" AND "AS AVAILABLE", WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES
 		OR CONDITIONS OR GUARANTEES. YOU, THE USER, ASSUME ALL RISK IN ITS USE, INCLUDING
@@ -149,34 +140,28 @@
 		VIRUSES. YOU MUST PASS THIS DISCLAIMER ON WHENEVER YOU DISTRIBUTE THE WORK OR DERIVATIVE
 		WORKS.
 	</li>
-	
 	<li><b>Indemnity. </b>You agree to defend, indemnify and hold harmless the Author and
 		the Publisher from and against any claims, suits, losses, damages, liabilities,
 		costs, and expenses (including reasonable legal or attorneys� fees) resulting from
 		or relating to any use of the Work by You.
 	</li>
-	
 	<li><strong>Limitation on Liability.</strong> EXCEPT TO THE EXTENT REQUIRED BY APPLICABLE
 		LAW, IN NO EVENT WILL THE AUTHOR OR THE PUBLISHER BE LIABLE TO YOU ON ANY LEGAL
 		THEORY FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES
 		ARISING OUT OF THIS LICENSE OR THE USE OF THE WORK OR OTHERWISE, EVEN IF THE AUTHOR
 		OR THE PUBLISHER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 	</li>
-	
 	<li><strong>Termination.</strong>
-	
-		<ol style="list-style-type: lower-alpha;">
+	<ol style="list-style-type: lower-alpha;">
 			<li>This License and the rights granted hereunder will terminate automatically upon
 				any breach by You of any term of this License. Individuals or entities who have
 				received Derivative Works from You under this License, however, will not have their
 				licenses terminated provided such individuals or entities remain in full compliance
 				with those licenses. Sections 1, 2, 6, 7, 8, 9, 10 and 11 will survive any termination
 				of this License. </li>
-				
 			<li>If You bring a copyright, trademark, patent or any other infringement claim against 
 				any contributor over infringements You claim are made by the Work, your License 
 				from such contributor to the Work ends automatically.</li>
-				
 			<li>Subject to the above terms and conditions, this License is perpetual (for the duration
 				of the applicable copyright in the Work). Notwithstanding the above, the Author
 				reserves the right to release the Work under different license terms or to stop
@@ -187,7 +172,6 @@
 			</li>
 		</ol>
 	</li>
-	
 	<li><strong>Publisher</strong>. The parties hereby confirm that the Publisher shall
 		not, under any circumstances, be responsible for and shall not have any liability
 		in respect of the subject matter of this License. The Publisher makes no warranty
@@ -196,10 +180,8 @@
 		general, special, incidental or consequential damages arising in connection to this
 		license. The Publisher reserves the right to cease making the Work available to
 		You at any time without notice</li>
-		
 	<li><strong>Miscellaneous</strong>
-	
-		<ol class="SpacedList" style="list-style-type: lower-alpha;">
+	<ol class="SpacedList" style="list-style-type: lower-alpha;">
 			<li>This License shall be governed by the laws of the location of the head office of
 				the Author or if the Author is an individual, the laws of location of the principal
 				place of residence of the Author.</li>
@@ -218,6 +200,5 @@
 				may not be modified without the mutual written agreement of the Author and You.
 			</li>
 		</ol>
-		
 	</li>
 </ol>
