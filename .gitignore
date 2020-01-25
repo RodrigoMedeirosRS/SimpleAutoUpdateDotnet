@@ -240,3 +240,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+RedCell.Net/obj
+RedCell.Net/bin/Debug/netcoreapp3.1
+RedCell.Diagnostics.Update/bin/Debug/netcoreapp3.1
+RedCell.Diagnostics.Update/obj
