@@ -1,4 +1,5 @@
 ﻿﻿using System;
+using RedCell.Diagnostics.Update;
 
 namespace RedCell.Demo
 {
