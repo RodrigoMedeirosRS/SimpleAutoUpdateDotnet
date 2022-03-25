@@ -1,4 +1,4 @@
-# Simple Auto Updater for NetCore 3.1
+# Simple Auto Updater for .Net
 * Check a remote site via HTTP for a newer version.
 * If a newer version is available, download it as a ZIP.
 * Ensure successful download before overwriting anything.
