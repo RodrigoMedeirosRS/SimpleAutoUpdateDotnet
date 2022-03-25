@@ -9,7 +9,7 @@
 * Accommodate some simple logging.
 * Single XML file configuration.
 * Work on multiplatforms (Linux and Windows).
-* Provide a simple, functional and reliable Auto Updater for NetCore 3 versions.
+* Provide a simple, functional and reliable Auto Updater for .NetFramework, .NetCore and .Net6.
 
 # How it Works
 <img src="https://github.com/RodrigoMedeirosRS/SimpleAutoUpdate/blob/master/Readme%20Resources/Update.png" />
