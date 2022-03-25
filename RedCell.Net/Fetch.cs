@@ -1,19 +1,13 @@
 ﻿using System;
 using System.Net;
-using System.IO;
 using System.Threading;
 using System.Text;
+using RedCell.Net.Interface;
 
 namespace RedCell.Net
 {
-    public class Fetch
+    public class Fetch : IFetch
     {
-        public Fetch()
-        {
-            Headers = new WebHeaderCollection();
-            Retries = 5;
-            Timeout = 6000;
-        }
         public WebHeaderCollection Headers { get; private set; }
         public HttpWebResponse Response { get; private set; }
         public NetworkCredential Credential { get; set; }
@@ -22,6 +16,12 @@ namespace RedCell.Net
         public int Timeout { get; set; }
         public int RetrySleep { get; set; }
         public bool Success { get; private set; }
+        public Fetch()
+        {
+            Headers = new WebHeaderCollection();
+            Retries = 5;
+            Timeout = 6000;
+        }
         public void Load(string url)
         {
             for (int retry = 0; retry < Retries; retry++)
@@ -78,14 +78,12 @@ namespace RedCell.Net
                 }
             }
         }
-
         public static byte[] Get(string url)
         {
             var f = new Fetch();
             f.Load(url);
             return f.ResponseData;
         }
-
         public string GetString()
         {
             var encoder = string.IsNullOrEmpty(Response.ContentEncoding) ?

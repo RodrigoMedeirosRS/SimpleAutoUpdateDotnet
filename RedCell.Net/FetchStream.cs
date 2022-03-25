@@ -2,11 +2,16 @@
 using System.IO;
 using System.Net;
 using System.Text;
+using RedCell.Net.Interface;
 
 namespace RedCell.Net
 {
-    public class FetchStream
+    public class FetchStream : IFetchStream
     {
+        public FetchStream()
+        {
+
+        }
         public HttpWebResponse Response { get; private set; }
         public byte[] ResponseData { get; private set; }
         public void Load(string url)

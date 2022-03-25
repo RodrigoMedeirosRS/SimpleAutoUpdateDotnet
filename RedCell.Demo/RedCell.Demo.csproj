@@ -1,26 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <TargetFramework>net462</TargetFramework>
     </PropertyGroup>
     <ItemGroup>
-        <Reference Include="DotNetZip">
-            <HintPath>../RedCell.Diagnostics.Update/bin/Release/netcoreapp3.1/publish/DotNetZip.dll</HintPath>
-        </Reference>
+      <PackageReference Include="DotNetZip" Version="1.16.0" />
+      <PackageReference Include="System.Security.Permissions" Version="4.7.0" />
     </ItemGroup>
     <ItemGroup>
-        <Reference Include="RedCell.Diagnostics.Update">
-            <HintPath>../RedCell.Diagnostics.Update/bin/Release/netcoreapp3.1/publish/RedCell.Diagnostics.Update.dll</HintPath>
-        </Reference>
-    </ItemGroup>
-    <ItemGroup>
-        <Reference Include="RedCell.Net">
-            <HintPath>../RedCell.Diagnostics.Update/bin/Release/netcoreapp3.1/publish/RedCell.Net.dll</HintPath>
-        </Reference>
-    </ItemGroup>
-    <ItemGroup>
-        <Reference Include="System.Security.Permissions">
-            <HintPath>../RedCell.Diagnostics.Update/bin/Release/netcoreapp3.1/publish/System.Security.Permissions.dll</HintPath>
-        </Reference>
+      <ProjectReference Include="..\RedCell.Diagnostics.Update\RedCell.Diagnostics.Update.csproj" />
+      <ProjectReference Include="..\RedCell.Net\RedCell.Net.csproj" />
     </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
 ﻿using System;
+using RedCell.Diagnostics.Update.Interface;
 
 namespace RedCell.Diagnostics.Update
 {
@@ -11,7 +12,7 @@ namespace RedCell.Diagnostics.Update
         public static bool Console { get; set; }
         public static bool Debug { get; set; }
         public static string Prefix { get; set; }
-        public static event EventHandler<LogEventArgs> Event;
+        public static event EventHandler<ILogEventArgs> Event;
         private static void OnEvent(string message)
         {
             if (Event != null)

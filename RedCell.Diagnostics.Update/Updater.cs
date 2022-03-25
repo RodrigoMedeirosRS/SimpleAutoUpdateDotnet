@@ -6,29 +6,32 @@ using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
+using RedCell.Diagnostics.Update.Interface;
 
 namespace RedCell.Diagnostics.Update
 {
-    public class Updater
+    public class Updater : IUpdater
     {
-        public const int DefaultCheckInterval = 900; // 900s = 15m
-        public const int FirstCheckDelay = 15;
-        public const string DefaultConfigFile = "update.xml";
-        public const string WorkPath = "Document";
-
-        private Timer _timer;
-        private volatile bool _updating;
-        private readonly Manifest _localConfig;
-        private Manifest _remoteConfig;
-        private readonly FileInfo _localConfigFile;
-
+        public int DefaultCheckInterval { get; private set; }
+        public int FirstCheckDelay { get; private set; }
+        public static string DefaultConfigFile { get; private set; }
+        public string WorkPath { get; private set; }
+        private Timer _timer { get; set; }
+        private bool _updating { get; set; }
+        private IManifest _localConfig { get; set; }
+        private IManifest _remoteConfig { get; set; }
+        private FileInfo _localConfigFile { get; set; }
         public Updater() : this(new FileInfo(DefaultConfigFile))
         {
-
+            DefaultConfigFile = "update.xml";
         }
-
-        public Updater(FileInfo configFile)
+        public Updater(FileInfo configFile, int intervalInSeconds = 900, int firstCheckDelayInSeconds = 15, string defaultConfigFile = "update.xml", string workPath = "Document")
         {
+            DefaultCheckInterval = intervalInSeconds;
+            FirstCheckDelay = firstCheckDelayInSeconds;
+            DefaultConfigFile = defaultConfigFile;
+            WorkPath = workPath;
+
             Log.Debug = true;
 
             _localConfigFile = configFile;
@@ -46,7 +49,6 @@ namespace RedCell.Diagnostics.Update
             Console.WriteLine("Information of data:\n" + data);
             this._localConfig = new Manifest(data);
         }
-
         public void StartMonitoring()
         {
             Log.Write("Starting monitoring in {0}s...", this._localConfig.CheckInterval);
@@ -54,7 +56,6 @@ namespace RedCell.Diagnostics.Update
             _timer = new Timer(Check, null, 5000, this._localConfig.CheckInterval * 1000);
             Log.Write("Already.");
         }
-
         public void StopMonitoring()
         {
             Log.Write("Stopping monitoring.");
@@ -66,7 +67,6 @@ namespace RedCell.Diagnostics.Update
             }
             _timer.Dispose();
         }
-
         private void Check(Object state)
         {
             Log.Write("Checking...");
@@ -225,7 +225,6 @@ namespace RedCell.Diagnostics.Update
             thisprocess.CloseMainWindow();
             thisprocess.Close();
             thisprocess.Dispose();
-
         }
     }
 }

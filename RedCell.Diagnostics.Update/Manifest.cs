@@ -2,23 +2,23 @@
 using System.Xml.Linq;
 using System.Linq;
 using System.IO;
+using RedCell.Diagnostics.Update.Interface;
 
 namespace RedCell.Diagnostics.Update
 {
-    internal class Manifest
+    internal class Manifest : IManifest
     {
-        private string _data;
-
-        public Manifest(string data)
-        {
-            Load(data);
-        }
+        private string _data { get; set; }
         public int Version { get; private set; }
         public int CheckInterval { get; private set; }
         public string RemoteConfigUri { get; private set; }
         public string SecurityToken { get; private set; }
         public string BaseUri { get; private set; }
         public string[] Payloads { get; private set; }
+        public Manifest(string data)
+        {
+            Load(data);
+        }
         private void Load(string data)
         {
             _data = data;

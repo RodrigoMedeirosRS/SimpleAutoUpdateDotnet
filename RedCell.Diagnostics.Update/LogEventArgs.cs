@@ -1,8 +1,9 @@
 ﻿using System;
+using RedCell.Diagnostics.Update.Interface;
 
 namespace RedCell.Diagnostics.Update
 {
-    public class LogEventArgs : EventArgs
+    public class LogEventArgs : EventArgs, ILogEventArgs
     {
         public LogEventArgs (string message)
         {
